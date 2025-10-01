@@ -27,3 +27,9 @@ framework:
 
             # Route your messages to the transports
             # 'App\Message\YourMessage': async
+
+            # Notification system routing
+            # Use 'async' for asynchronous processing (requires messenger:consume)
+            App\Message\NewNotificationMessage: async
+            # Or use 'sync' for immediate/synchronous processing (uncomment line below and comment line above)
+            # App\Message\NewNotificationMessage: sync
